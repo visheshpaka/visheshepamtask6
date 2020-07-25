@@ -1,0 +1,30 @@
+Êþº¾   3 x  5HruthvikEpam6/Hruthvik_CustomCollections/HruthvikCollection  java/lang/Object LArray [Ljava/lang/Object; elementcount I <init> ()V Code
+   	 
+	    	     LineNumberTable LocalVariableTable this 7LHruthvikEpam6/Hruthvik_CustomCollections/HruthvikCollection; add (Ljava/lang/Object;)V
+    
+ increaseCapacity obj Ljava/lang/Object; StackMapTable newCapacity 	nextArray i  fetch (I)V	 % ' & java/lang/System ( ) out Ljava/io/PrintStream; + java/lang/StringBuilder - Element is:
+ * / 	 0 (Ljava/lang/String;)V
+ * 2 3 4 append -(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+ * 6 7 8 toString ()Ljava/lang/String;
+ : < ; java/io/PrintStream = 0 println remove @ +List is empty,Cannot delete the elements... B 
+Removed element is 
+ % D E F 	arraycopy *(Ljava/lang/Object;ILjava/lang/Object;II)V r 	printList
+ *  K  
+ * M 3 N -(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ : P Q 0 print
+ : S = 
+ obj1 V [ ] X [ 
+ Z \ [ java/lang/String ] ^ valueOf &(Ljava/lang/Object;)Ljava/lang/String; `  , 
+ Z b c d length ()I
+ Z f g h 	substring (II)Ljava/lang/String; j ]
+ res Ljava/lang/String; get (I)Ljava/lang/Object; p #java/lang/IndexOutOfBoundsException
+ * r 3 s (I)Ljava/lang/StringBuilder;
+ o / index 
+SourceFile HruthvikCollection.java !                  	 
+     I     *· *
+½ µ *µ ±                                     r     %*´ *´ ¾  *¶ *´ *´ +S*Y´ `µ ±             	     $         %       %           
+     ž     -*´ ¾h<½ M>§ ,*´ 2S„*´ ¾¡ÿî*,µ ±                    '  ,     *    -      %                    þ  !  " #     T     ² $» *Y,· .*´ 2¶ 1¶ 5¶ 9±       
+                           > #     ¶     R*´ š ² $?¶ 9§ B*´ 2M² $» *YA· .,¶ 1¶ 5¶ 9*´ `*´ *´ ¾dd¸ C*Y´ dµ ±       "         !  #  $ / % G & Q (         R       R      8 G       >  H 
+     Ò     B*´ Y:¾>=§ +2L+Ç § $² $» *Y· I+¶ 1J¶ L¶ 5¶ O„¡ÿÖ² $¶ R±           *  +  ,  . 3 * ; / A 0        B        T      > ÿ     !  ÿ     !  ÿ     !  ÿ       7 8    "     k*´ š U°WL*´ Y:¾6>§ *2M,Ç § $» *Y+¸ Y· .,¶ 1_¶ L¶ 5L„¡ÿÖ++¶ ad¶ eL» *Y+¸ Y· .i¶ L¶ 5L+°       .    2  3 
+ 5  6 ! 7 % 8 ( : @ 6 I < U > i ?         k      ^ k l  !  T      K 
+ÿ    Z  !  ÿ    Z  !  ÿ    Z  !  ÿ    Z    m n     m     '› *´ ¡ » oY» *Y· I¶ q¶ 5· t¿*´ °           C  D " F        '       ' u         v    w
